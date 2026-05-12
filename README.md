@@ -1,12 +1,16 @@
 # Catalyst MCP Cache
 
-Source-available MCP progressive-discovery adapter powered by the closed-source,
-monetized `catalyst-brain` SDK.
+Source-available MCP progressive-discovery adapter powered by the public
+`catalyst-brain` SDK wheel.
 
-This repo is a wedge: researchers and agent builders can integrate and test the
-workflow, while the core engine remains in `catalyst-brain`. Production,
-enterprise, hosted, revenue-generating, or customer-pilot use requires a written
-license or pilot agreement.
+Researchers and agent builders can integrate and test the workflow while the
+core engine remains in `catalyst-brain`. The Catalyst Brain free tier is
+generous, does not require registration or signup, and does not need an API key
+for early local evaluation. Most users should not hit free-tier limits during
+initial integration.
+
+When this adapter moves toward production agents, hosted MCP services,
+enterprise deployment, customer pilots, or higher-volume API usage, contact:
 
 ```text
 hello@strategic-innovations.ai
@@ -25,7 +29,7 @@ behind Catalyst-backed compact references:
 | Query-gated selection | Ranks tools with `CatalystTokenKernel.discover(...)` |
 | Deferred tool results | Stores full MCP call results behind compact task refs |
 | Rain state handoff | Exports compact session state for agent/serverless transfer |
-| Commercial boundary | Free research/evaluation adapter; production requires a Catalyst license |
+| Production path | Free early evaluation; contact Catalyst for production, hosted, enterprise, or higher-quota use |
 
 This adapter uses public SDK APIs only. It does not expose Catalyst Brain source
 or trade secrets.
@@ -107,13 +111,15 @@ does not claim physical quantum behavior. Use the public benchmark suite at
 `https://github.com/CrewRiz/catalyst-brain-benchmarks` for reproducible SDK
 measurements.
 
-## License Boundary
+## Free Tier And Production Use
 
-Allowed without a commercial agreement: non-commercial research, academic
-experiments, personal evaluation, benchmark reproduction, and pull requests.
+Install `catalyst-brain` from PyPI and evaluate this adapter without signup,
+registration, or an API key. The free tier covers early research, academic
+experiments, personal evaluation, benchmark reproduction, prototypes, pull
+requests, and issue reports.
 
-Requires a written license or pilot agreement: production agents, enterprise
-internal deployments, hosted MCP services, paid products, customer pilots, or
-any revenue-generating workflow.
+Most users should not hit free-tier limits during early development. If your use
+case becomes production agents, hosted MCP services, enterprise deployment,
+customer pilots, revenue workflows, or needs higher quotas/support, contact:
 
 Contact `hello@strategic-innovations.ai`.
